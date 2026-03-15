@@ -1,8 +1,17 @@
 # Battleship Frontend
 
-This is a separate React + Vite frontend project for building a browser version of Battleship.
+A standalone React + Vite browser version of Battleship.
 
-It is intentionally separate from the original Java console repo so the web UI can evolve independently.
+This project is intentionally separate from the original Java console repo so the web game can evolve independently.
+
+## Features
+
+- 10x10 Battleship gameplay
+- Manual ship placement with hover preview
+- Ship rotation, random fleet generation, and placement reset
+- Computer opponent with targeted follow-up shots after hits
+- Hit, miss, sunk, and win/loss states
+- Responsive two-board layout
 
 ## Run Locally
 
@@ -11,14 +20,10 @@ npm install
 npm run dev
 ```
 
-The dev server runs on:
+The dev server runs on `http://localhost:5174`.
 
-- `http://localhost:5174`
+## Build
 
-## Next Build Steps
-
-- add grid state and rendering
-- add ship placement
-- add attack turn logic
-- add computer opponent logic
-- add win/loss handling
+```bash
+npm run build
+```
